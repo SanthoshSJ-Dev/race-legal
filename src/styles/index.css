@@ -1,0 +1,37 @@
+@import url(./navbar.css);
+@import url(./hero_section.css);
+@import url(./contact.css);
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgb(255, 255, 255);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --dark-1: #93828dff;
+  --dark-4: #3f2121ff;
+  --dark-2: #754e5fff;
+  --dark-3: #624a5cff;
+  --orange: #fe9f2bff;
+}
+
+.section {
+  padding: 50px 100px;
+}
+
+.section h1 {
+  font-weight: 800;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 20px 20px;
+  }
+}

@@ -4,7 +4,7 @@ const AccountingAuditAssurance = () => {
   return (
     <>
       <div className="AAA">
-        <h1>Accounting, Audit & Assurance</h1>
+        <h2>Accounting, Audit & Assurance</h2>
         <p>
           We ensure client gets effective financial systems and controls in
           place to meet your business and compliance requirements to focus on
@@ -28,7 +28,7 @@ const AccountingAuditAssurance = () => {
           expertise across a wide range of business sectors.
         </p>
 
-        <h1>Key accounting services:</h1>
+        <h2>Key accounting services:</h2>
 
         <ul>
           <li>Accounting services</li>

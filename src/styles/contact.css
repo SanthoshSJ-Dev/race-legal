@@ -1,0 +1,19 @@
+.address_full{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+}
+
+.address{
+    width: 50%;
+}
+
+.address span{
+    font-weight: 600;
+}
+
+.contact{
+    width: 50%;
+}

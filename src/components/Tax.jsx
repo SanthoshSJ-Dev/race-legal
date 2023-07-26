@@ -3,7 +3,7 @@ import React from "react";
 const Tax = () => {
   return (
     <>
-      <h1>Tax</h1>
+      <h2>Tax</h2>
       <p>
         With the experienced account and audit team we handled taxation activity
         for the major industries and individuals. Currently the tax regulations
@@ -24,7 +24,7 @@ const Tax = () => {
         so you can focus on other vital aspects of your business.
       </p>
 
-      <h1>Key accounting services:</h1>
+      <h2>Key accounting services:</h2>
       <ul>
         <li>Corporate tax</li>
         <li>Customs duties</li>

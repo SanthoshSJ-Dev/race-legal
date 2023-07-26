@@ -3,7 +3,7 @@ import React from "react";
 const Advisory = () => {
   return (
     <>
-      <h1>Advisory</h1>
+      <h2>Advisory</h2>
       <p>
         RACE associates worked with most of the industries and been the part
         industries for the export / import and business needs. Our expert
@@ -26,7 +26,7 @@ const Advisory = () => {
         organization's strategic vision.
       </p>
 
-      <h1>Key accounting services:</h1>
+      <h2>Key accounting services:</h2>
       <ul>
         <li>Business valuation</li>
         <li>Corporate finance</li>

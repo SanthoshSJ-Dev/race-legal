@@ -3,7 +3,7 @@ import React from "react";
 const WhoWeAre = () => {
   return (
     <>
-      <div className="who_we_are section">
+      <div className="who_we_are section" id="about">
         <h1>Who We Are</h1>
         <p>
           RACE Innovations Private Ltd is an Indian research, legal and
@@ -41,7 +41,9 @@ const WhoWeAre = () => {
           <i>
             “Our goal is to be a prominent service provider in supporting
             clients on their accounting and legal needs to enhance their
-            business effectiveness and achieve great goals. <br />
+            business effectiveness and achieve great goals.
+          </i>
+          <i>
             We create a community for firms to collaborate on maximizing
             opportunities and address the challenges they face in a constantly
             changing professional services environment."

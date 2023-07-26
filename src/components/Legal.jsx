@@ -3,7 +3,7 @@ import React from "react";
 const Legal = () => {
   return (
     <>
-      <h1>Legal</h1>
+      <h2>Legal</h2>
       <p>
         Most of the businesses faces many complex legal and commercial pressures
         when operating internationally that require the guidance of experienced
@@ -28,7 +28,7 @@ const Legal = () => {
         international stage, an RACE member firm can help.
       </p>
 
-      <h1>Key accounting services:</h1>
+      <h2>Key accounting services:</h2>
 
       <ul>
         <li>Anti-trust & Competition</li>
