@@ -4,7 +4,7 @@ import Advisory from './Advisory'
 import Legal from './Legal'
 import Tax from './Tax'
 
-const OurServices = () => {
+const Services = () => {
   return (
     <>
       <div className="our_services section" id='services'>
@@ -18,4 +18,4 @@ const OurServices = () => {
   )
 }
 
-export default OurServices
+export default Services
