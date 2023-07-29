@@ -1,5 +1,8 @@
 .hero_section {
-  padding-top: 100px;
+  height: 90vh;
+  background: url(../assets/banner.jpg) no-repeat center;
+  margin: 0;
+  padding: 0;
 }
 
 .hero_section h1 {
@@ -7,27 +10,25 @@
   font-size: 4rem;
   font-weight: 800;
   line-height: 5rem;
-  color: var(--dark-4);
+  color: var(--blue-5);
 }
 
-.hero_section{
-    margin-top: 50px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.hero_section {
+  margin-top: 50px;
 }
 
-.hero_section_btn_cta{
-    background-color: var(--dark-4);
-    color: var(--orange);
-    outline: none;
-    border: none;
-    padding: 20px 40px;
-    border-radius: 40px;
-    font-weight: 700;
+.hero_section_btn_cta {
+  background-color: var(--grey-2);
+  color: var(--blue-1);
+  outline: none;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 40px;
+  font-weight: 700;
 }
 
-.hero_section img{
-    width: 550px;
-    padding-top: 30px;
+.hero_section img {
+  position: absolute;
+  width: 100vw;
+  padding-top: 30px;
 }

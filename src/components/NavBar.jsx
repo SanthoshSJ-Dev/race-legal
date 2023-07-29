@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { CgMenuRight, CgClose, CgChevronDown } from "react-icons/cg";
 import logo from "../assets/ri-logo.png";
-import { Link } from "react-scroll";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,66 +10,78 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-    scrollToTop();
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu when a link is clicked
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h1 className="navbar-logo">
-          <img src={logo} width={300} />
-        </h1>
+        <div className="navbar-logo">
+          <img src={logo} alt="Logo" width={300} />
+        </div>
         <div className="menu-icon" onClick={toggleNavbar}>
-          {isOpen ? <FaTimes /> : <FaBars />}
+          {isOpen ? <CgClose /> : <CgMenuRight />}
         </div>
         <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-          <a className="nav-link" onClick={handleScrollToTop}>Home</a>
+            <Link className="nav-link" to="/" onClick={handleLinkClick}>
+              Home
+            </Link>
           </li>
           <li className="nav-item">
-            <Link
-              activeClass="active" // Apply "active" class when scrolling to the target section
-              to="about" // The target section's ID you want to scroll to
-              spy={true} // Enable active class based on the scroll position
-              smooth={true} // Enable smooth scrolling
-              offset={-70} // Offset for scroll-to position (adjust as needed)
-              duration={500} // Duration of the scroll animation in milliseconds
-              className="nav-link"
-              onClick={toggleNavbar}
-            >
+            <Link className="nav-link" to="/about" onClick={handleLinkClick}>
               About Us
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              activeClass="active" // Apply "active" class when scrolling to the target section
-              to="services" // The target section's ID you want to scroll to
-              spy={true} // Enable active class based on the scroll position
-              smooth={true} // Enable smooth scrolling
-              offset={-70} // Offset for scroll-to position (adjust as needed)
-              duration={500} // Duration of the scroll animation in milliseconds
-              className="nav-link"
-              onClick={toggleNavbar}
-            >
-              Services
-            </Link>
+            <div className="nav-dropdown">
+              <Link className="nav-link dropdown-arrow" to="/services">
+                <p>Services</p>
+                <CgChevronDown className="arrow-icon" />
+              </Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/services/triple-a"
+                    onClick={handleLinkClick}
+                  >
+                    Triple A
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/services/advisory"
+                    onClick={handleLinkClick}
+                  >
+                    Advisory
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/services/legal"
+                    onClick={handleLinkClick}
+                  >
+                    Legal
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/services/tax"
+                    onClick={handleLinkClick}
+                  >
+                    Tax
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </li>
           <li className="nav-item">
-            <Link
-              activeClass="active" // Apply "active" class when scrolling to the target section
-              to="contact" // The target section's ID you want to scroll to
-              spy={true} // Enable active class based on the scroll position
-              smooth={true} // Enable smooth scrolling
-              offset={-70} // Offset for scroll-to position (adjust as needed)
-              duration={500} // Duration of the scroll animation in milliseconds
-              className="nav-link"
-              onClick={toggleNavbar}
-            >
+            <Link className="nav-link" to="/contact" onClick={handleLinkClick}>
               Contact Us
             </Link>
           </li>
