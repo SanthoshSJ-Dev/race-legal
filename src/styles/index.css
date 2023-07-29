@@ -2,10 +2,18 @@
 @import url(./hero_section.css);
 @import url(./contact.css);
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --size-1: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --size-2: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --size-3: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --size-4: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --size-5: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --size-6: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --size-7: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 }
 
 :root {
@@ -29,7 +37,7 @@
   --grey-1: #a3abbd;
 }
 
-li{
+li {
   list-style: none;
 }
 

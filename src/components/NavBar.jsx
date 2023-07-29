@@ -36,7 +36,7 @@ const NavBar = () => {
           </li>
           <li className="nav-item">
             <div className="nav-dropdown">
-              <Link className="nav-link dropdown-arrow" to="/services">
+              <Link className="nav-link dropdown-arrow" to="/services" onClick={handleLinkClick}>
                 <p>Services</p>
                 <CgChevronDown className="arrow-icon" />
               </Link>
