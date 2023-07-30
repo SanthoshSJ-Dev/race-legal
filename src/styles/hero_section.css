@@ -1,45 +1,74 @@
-.hero_section {
-  height: calc(107vh - 100px);
- background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(20, 129, 192, 0.5)), url(../assets/banner.jpg) no-repeat center;
-  margin-top: 100px;
+.banner {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background: url(../assets/banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
 }
 
 .hero_section {
-  margin-top: 50px;
-  text-align: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.hero_section .text {
+  z-index: 100;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px ;
+  gap: 20px;
+  margin-top: 90px;
 }
 
 .hero_section .title {
-  font-size: var(--size-7);
+  text-align: left;
+  font-size: var(--size-5);
   font-weight: 800;
-  line-height: 6rem;
+  line-height: var(--size-6);
   color: var(--blue-5);
 }
 
-.hero_section .caption{
-  width: 800px;
-  font-size: var(--size-2);
+.hero_section .caption {
+  font-size: var(--size-1);
   font-weight: 500;
   line-height: var(--size-3);
+  margin-bottom: 20px;
 }
 
-.hero_section_btn_cta {
-  background-color: var(--grey-2);
-  color: var(--blue-1);
-  outline: none;
-  border: none;
-  padding: 20px 40px;
-  border-radius: 40px;
+button {
+  width: 180px;
+  cursor: pointer;
   font-weight: 700;
+  transition: all .2s;
+  padding: 8px 16px 8px 22px;
+  border-radius: 100px;
+  background: var(--blue-4);
+  color: white;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
 }
 
-.hero_section img {
-  position: absolute;
-  width: 100vw;
-  padding-top: 30px;
+button:hover {
+  background: var(--blue-5);
 }
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+

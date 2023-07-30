@@ -1,10 +1,12 @@
 import React from 'react'
-import { HeroSection } from '../components/HeroSection'
+import { HeroSection } from '../components/homepage/HeroSection'
+import Empty from '../components/Empty'
 
 const HomePage = () => {
   return (
     <>
       <HeroSection/>
+      <Empty/>
     </>
   )
 }

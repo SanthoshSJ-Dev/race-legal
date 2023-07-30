@@ -1,21 +1,25 @@
 .navbar {
-  background-color: #f5f5f5;
-  color: #000;
+  height: 100px;
   font-weight: 700;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+  padding: 25px 100px;
+  transition: background-color 0.3s ease-in-out; 
+}
+
+.navbar.scrolling {
+  background-color: #fff; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 7px 15px;
 }
 
 .menu-icon {
@@ -28,16 +32,31 @@
   list-style: none;
   display: flex;
   align-items: center;
-}
-
-.nav-item {
-  padding: 0 15px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 100px;
 }
 
 .nav-link {
   cursor: pointer;
-  color: #000;
   text-decoration: none;
+  padding: 10px 20px;
+  margin: 0px 20px 0px 0px;
+  color: var(--blue-5);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: var(--blue-1);
+  border-radius: 50px;
+  color: var(--blue-5);
+}
+
+.active-link {
+  background-color: var(--blue-5);
+  border-radius: 50px;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 /* CSS for the dropdown on desktop version */
@@ -61,21 +80,26 @@
   top: 100%;
   left: 0;
   min-width: 200px;
-  background-color: #f5f5f5;
+  border-radius: 20px;
+  background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: none;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .dropdown-item {
   padding: 10px;
   display: block;
-  color: #000;
+  color:  var(--blue-5);
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Apply hover effect on the dropdown items */
 .dropdown-item:hover {
   background-color: var(--blue-1);
+  border-radius: 20px;
 }
 
 /* Optional: Add some spacing between dropdown items */
@@ -84,9 +108,15 @@
 }
 
 /* Media query for responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1040px) {
+
+  .navbar{
+    height: 60px;
+    padding: 10px 30px 10px 20px;
+  }
+
   .navbar-logo img {
-    width: 90%;
+    width: 15%;
   }
 
   .menu-icon {
@@ -96,15 +126,16 @@
   .nav-menu {
     flex-direction: column;
     position: absolute;
-    top: 65px;
+    top: 60px;
     left: 0;
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: #fff;
     visibility: hidden;
     transform: translateY(-100%);
     pointer-events: none;
     transition: all 0.3s ease;
     z-index: 100;
+    border-radius: 0px 0px 30px 30px;
   }
 
   .nav-menu.active {

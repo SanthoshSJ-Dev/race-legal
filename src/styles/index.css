@@ -1,6 +1,7 @@
 @import url(./navbar.css);
 @import url(./hero_section.css);
 @import url(./contact.css);
+@import url(./footer.css);
 
 * {
   margin: 0;
@@ -27,11 +28,17 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --blue-5: #1e73be;
+  /* --blue-5: #1e73be;
   --blue-4: #498edc;
   --blue-3: #6aa9fa;
   --blue-2: #8ac6ff;
-  --blue-1: #aae3ff;
+  --blue-1: #aae3ff; */
+
+  --blue-5: #013F7C;
+  --blue-4: #3C61A3;
+  --blue-3: #6685CB;
+  --blue-2: #8EACF5;
+  --blue-1: #B8D4FF;
 
   --grey-2: #3f4756;
   --grey-1: #a3abbd;
@@ -39,6 +46,17 @@
 
 li {
   list-style: none;
+}
+
+
+
+.empty {
+  background-color: red;
+  height: 100vh;
+}
+
+.empty-space {
+  height: 50px;
 }
 
 .section {
@@ -60,3 +78,29 @@ li {
     padding: 20px 20px;
   }
 }
+
+
+
+
+/* Scroller Code */
+
+/* Hide the scrollbar for WebKit-based browsers */
+body {
+  width: calc(100% + 0.5rem);
+  margin-right: -0.5rem;
+  scrollbar-width: none; /* Firefox doesn't support this property */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit-based browsers */
+  width: 0.5rem; /* Set a width for the scrollbar space (optional) */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb (the draggable part) */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide the track (the scrollbar background) */
+}
+
