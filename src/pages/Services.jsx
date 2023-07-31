@@ -1,12 +1,11 @@
 import React from "react";
+import ServiceCard from "../components/homepage/ServiceCard";
 
 
 const Services = () => {
   return (
     <>
-      <div className="our_services section" id="services">
-        <h1>Our Services</h1>
-      </div>
+      <ServiceCard/>
     </>
   );
 };

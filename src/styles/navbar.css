@@ -1,12 +1,12 @@
 .navbar {
   height: 100px;
+  width: 100%;
   font-weight: 700;
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 100;
-  padding: 25px 100px;
+  padding: 20px 100px;
   transition: background-color 0.3s ease-in-out; 
 }
 
@@ -96,9 +96,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+.dropdown-item.active-link{
+  color: white;
+}
+
 /* Apply hover effect on the dropdown items */
 .dropdown-item:hover {
   background-color: var(--blue-1);
+  color: var(--blue-5);
   border-radius: 20px;
 }
 

@@ -1,0 +1,65 @@
+.who_we_are {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.who_we_are .banner {
+  width: 100%;
+  height: 200px;
+  background: url(../assets/who-we-are.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.who_we_are h1 {
+  color: var(--blue-5);
+}
+
+.who_we_are img {
+  width: 500px;
+  float: right;
+  margin: 0px 0px 0px 20px;
+}
+
+.who_we_are .text p {
+  text-align: justify;
+}
+
+.qoute {
+  display: flex;
+  margin-top: 50px;
+}
+
+.blockquote {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+.blockquote p {
+  font-family: "Utopia-italic";
+  font-size: 1.4rem;
+  font-weight: 700px;
+  text-align: center;
+}
+
+.double_qoute {
+  position: absolute;
+  top: 0;
+  font-size: 100px;
+  color: rgba(21, 75, 127, 0.155);
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid var(--blue-3);
+  height: 3px;
+  width: 200px;
+}
